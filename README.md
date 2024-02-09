@@ -38,6 +38,18 @@ import KnobScripter
 2. Restart Nuke.
 <br />
 
+### C. [Rez](https://github.com/AcademySoftwareFoundation/rez.git)
+To install this rez package of KnobScripter, simply clone this repo and execute this in the folder
+```bash
+rez build --install #--release # optionally
+```
+
+#### What's the build system
+The "build" system just copy [KnobScripter](./KnobScripter/) and a menu.py to `REZ_BUILD_INSTALL_PATH`.
+
+#### Package command
+Simple append of this rez packages's `{root}` path to `NUKE_PATH`.
+
 ## Usage
 In Nuke, you can open the **KnobScripter** both as a floating window or as a dockable pane.
 - To open the KnobScripter as a **floating window**, simply press `Alt+Z` on the Node
